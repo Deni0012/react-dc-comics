@@ -1,9 +1,63 @@
 import imageDc from '../assets/img/dc-logo-bg.png';
-import footerIconOne from '../assets/img/footer-facebook.png';
-import footerIconTwo from '../assets/img/footer-twitter.png';
-import footerIconThree from '../assets/img/footer-youtube.png';
-import footerIconFour from '../assets/img/footer-pinterest.png';
-import footerIconFive from '../assets/img/footer-periscope.png';
+import footerIconFacebook from '../assets/img/footer-facebook.png';
+import footerIconTwitter from '../assets/img/footer-twitter.png';
+import footerIconYoutube from '../assets/img/footer-youtube.png';
+import footerIconPinterest from '../assets/img/footer-pinterest.png';
+import footerIconPeriscope from '../assets/img/footer-periscope.png';
+
+
+// ComicURL
+const dcComicsUrl = [
+    { name: 'Characters', url: '/#' },
+    { name: 'Comics', url: '/#' },
+    { name: 'Movies', url: '/#' },
+    { name: 'TV', url: '/#' },
+    { name: 'Games', url: '/#' },
+    { name: 'Videos', url: '/#' },
+    { name: 'News', url: '/#' }
+];
+
+// DC-URL
+const dcUrl = [
+    { name: 'Terms Of Use', url: '/#' },
+    { name: 'Privacy policy (New)', url: '/#' },
+    { name: 'Ad Choices', url: '/#' },
+    { name: 'Advertising', url: '/#' },
+    { name: 'Jobs', url: '/#' },
+    { name: 'Subscriptions', url: '/#' },
+    { name: 'Talent Workshops', url: '/#' },
+    { name: 'CPSC Certificates', url: '/#' },
+    { name: 'Ratings', url: '/#' },
+    { name: 'Shop Help', url: '/#' },
+    { name: 'Contact Us', url: '/#' }
+];
+
+// SitesURL
+const sitesUrl = [
+    { name: 'DC', url: '#' },
+    { name: 'MAD Magazine', url: '/#' },
+    { name: 'DC Kids', url: '/#' },
+    { name: 'DC Universe', url: '/#' },
+    { name: 'DC Power Visa', url: '/#' }
+];
+
+// ShopURL
+const shopUrl = [
+    { name: 'Shop DC', url: '/#' },
+    { name: 'Shop DC Collectibles', url: '/#' }
+];
+
+
+// SocialURL
+const socialUrl = [
+    { name: 'Facebook', url: 'https://www.facebook.com/dc', icon: FacebookIcon },
+    { name: 'Twitter', url: 'https://twitter.com/dccomics', icon: TwitterIcon },
+    { name: 'YouTube', url: 'https://www.youtube.com/user/DCEntertainment', icon: YoutubeIcon },
+    { name: 'Pinterest', url: 'https://www.pinterest.com/dccomics/', icon: PinterestIcon },
+    { name: 'Location', url: 'https://www.dc.com/dccomicslocator', icon: PeriscopeIcon }
+];
+
+
 function Footer() {
     return (
         <>
@@ -61,11 +115,11 @@ function Footer() {
                             </div>
                             <div className="d-flex">
                                 <h3 className="h3-footer t-azure">FOLLOW US!</h3>
-                                <img src={footerIconOne} alt="facebook" className="icon-footer" />
-                                <img src={footerIconTwo} alt="twitter" className="icon-footer" />
-                                <img src={footerIconThree} alt="youtube" className="icon-footer" />
-                                <img src={footerIconFour} alt="pinterest" className="icon-footer" />
-                                <img src={footerIconFive} alt="periscope" className="icon-footer" />
+                                <img src={footerIconFacebook} alt="facebook" className="icon-footer" />
+                                <img src={footerIconTwitter} alt="twitter" className="icon-footer" />
+                                <img src={footerIconYoutube} alt="youtube" className="icon-footer" />
+                                <img src={footerIconPinterest} alt="pinterest" className="icon-footer" />
+                                <img src={footerIconPeriscope} alt="periscope" className="icon-footer" />
                             </div>
                         </div>
                     </div>
@@ -74,6 +128,8 @@ function Footer() {
         </>
     )
 }
+
+
 export default Footer;
 
 
