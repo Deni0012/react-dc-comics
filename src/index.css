@@ -34,69 +34,21 @@ header {
   width: 70px;
 }
 
-.ul-class {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-weight: 700;
-}
-
-.img-logo {
-  padding: 10px;
-}
-
-.margin {
-  margin-right: 15px;
-  list-style-type: none;
-  color: black;
-}
-
-nav {
-  align-self: center;
-}
-
+/* Main */
 main {
-  background-color: brown;
-}
-
-h1 {
-  padding: 50px;
-  margin-left: 220px;
+  background-color: black;
+  color: white;
 }
 
 .container-h1 {
-  color: white;
-  font-weight: 700;
-  background-color: #1C1C1C
-}
-
-.container-main {
-  background-color: #0282F9;
-}
-
-.icon-list {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 200px;
   display: flex;
-  justify-content: center;
-  text-align: center;
-  max-width: 1400px;
-  justify-self: center;
+  align-items: center;
 }
 
-.icon {
-  padding: 50px;
-  list-style-type: none;
-  color: white;
-  display: flex;
-  gap: 30px;
-}
-
-.img-icon {
-  width: 20%;
-}
-
-.img-icon-svg {
-  width: 20%;
-}
 
 .container-footer {
   background-image: url(./assets/img/footer-bg.jpg);
@@ -188,6 +140,11 @@ h1 {
 }
 
 /* Listmenu */
+.list-menu-container {
+  background-color: #0282f9;
+  padding: 30px 0;
+}
+
 .list-menu-container {
   background-color: #0282f9;
   padding: 30px 0;
