@@ -20,27 +20,24 @@ function Header() {
         <>
 
             <header>
-                <div>
-                    <img src={dcLogo} alt="dc-logo" />
+                <div className='header-container'>
+
+                    <div className='logo-container'>
+                        <a href="/">
+                            <img src={dcLogo} alt="dc-logo" />
+                        </a>
+                    </div>
+
+                    <Navbar link={navLinks} />
+
                 </div>
-                <nav>
-                    <ul className="ul-class">
-                        <li className="margin">CHARACTERS</li>
-                        <li className="margin t-azure">COMICS</li>
-                        <li className="margin">MOVIES</li>
-                        <li className="margin">TV</li>
-                        <li className="margin">GAMES</li>
-                        <li className="margin">COLLECTIBLES</li>
-                        <li className="margin">VIDEOS</li>
-                        <li className="margin">FANS</li>
-                        <li className="margin">NEWS</li>
-                        <li className="margin">SHOP</li>
-                    </ul>
-                </nav>
 
 
 
-            </header>
+
+
+
+            </header >
 
         </>
     )

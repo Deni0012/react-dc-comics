@@ -12,9 +12,26 @@ body {
 }
 
 
+
+/* Hedear */
 header {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+}
+
+.header-container {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 20px;
+}
+
+/* Logo */
+.dc-logo {
+  width: 70px;
 }
 
 .ul-class {
@@ -22,14 +39,6 @@ header {
   justify-content: center;
   align-items: center;
   font-weight: 700;
-}
-
-.margin {
-  border-left: 2px solid transparent;
-}
-
-.margin:hover {
-  border-left: 2px solid #0282F9;
 }
 
 .img-logo {
@@ -150,4 +159,66 @@ h1 {
 .d-flex {
   display: flex;
   gap: 70px;
+}
+
+
+/* navbar */
+
+.nav-list {
+  display: flex;
+  list-style: none;
+}
+
+.nav-item {
+  margin: 0 10px;
+}
+
+.nav-link {
+  color: #333;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  padding-bottom: 24px;
+  border-bottom: 2px solid transparent;
+}
+
+.nav-link:hover {
+  color: #0282f9;
+  border-bottom: 2px solid #0282f9;
+}
+
+/* Listmenu */
+.list-menu-container {
+  background-color: #0282f9;
+  padding: 30px 0;
+}
+
+.list-menu-contain {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.list-menu-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+}
+
+.list-menu-item {
+  display: flex;
+  align-items: center;
+}
+
+.list-icon {
+  height: 40px;
+  width: auto;
+  margin-right: 10px;
+}
+
+.list-text {
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
 }
