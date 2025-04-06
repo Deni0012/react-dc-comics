@@ -1,3 +1,4 @@
+import LinkFooter from './LinkFooter';
 import imageDc from '../assets/img/dc-logo-bg.png';
 import footerIconFacebook from '../assets/img/footer-facebook.png';
 import footerIconTwitter from '../assets/img/footer-twitter.png';
@@ -50,11 +51,11 @@ const shopUrl = [
 
 // SocialURL
 const socialUrl = [
-    { name: 'Facebook', url: 'https://www.facebook.com/dc', icon: FacebookIcon },
-    { name: 'Twitter', url: 'https://twitter.com/dccomics', icon: TwitterIcon },
-    { name: 'YouTube', url: 'https://www.youtube.com/user/DCEntertainment', icon: YoutubeIcon },
-    { name: 'Pinterest', url: 'https://www.pinterest.com/dccomics/', icon: PinterestIcon },
-    { name: 'Location', url: 'https://www.dc.com/dccomicslocator', icon: PeriscopeIcon }
+    { name: 'Facebook', url: 'https://www.facebook.com/dc', icon: footerIconFacebook },
+    { name: 'Twitter', url: 'https://twitter.com/dccomics', icon: footerIconTwitter },
+    { name: 'YouTube', url: 'https://www.youtube.com/user/DCEntertainment', icon: footerIconYoutube },
+    { name: 'Pinterest', url: 'https://www.pinterest.com/dccomics/', icon: footerIconPinterest },
+    { name: 'Location', url: 'https://www.dc.com/dccomicslocator', icon: footerIconPeriscope }
 ];
 
 
@@ -62,64 +63,35 @@ function Footer() {
     return (
         <>
             <footer>
-                <div className="container-footer">
-                    <img src={imageDc} alt="foto-dc" className="img-dc" />
-                    <card className="card">
+                <div className='container-footer'>
+                    <div className="footer-link-container">
                         <div>
-                            <h3 className="h3-footer">DC COMICS</h3>
-                            <ul>
-                                <li className="opacity">Characters</li>
-                                <li className="opacity">Comics</li>
-                                <li className="opacity">Movies</li>
-                                <li className="opacity">TV</li>
-                                <li className="opacity">Games</li>
-                                <li className="opacity">Videos</li>
-                                <li className="opacity">News</li>
-                            </ul>
-                            <h3 className="h3-footer">SHOP</h3>
-                            <ul>
-                                <li className="opacity">Shop DC</li>
-                                <li className="opacity">Shop DC Collectibles</li>
-                            </ul>
+                            <LinkFooter title="DC COMICS" links={dcComicsUrl} />
+                            <LinkFooter title="SHOP" links={shopUrl} />
                         </div>
-                        <div>
-                            <h3 className="h3-footer">DC </h3>
-                            <ul>
-                                <li className="opacity">Term Of Use</li>
-                                <li className="opacity">Privacy policy (New)</li>
-                                <li className="opacity">Ad Choices</li>
-                                <li className="opacity">Advertising</li>
-                                <li className="opacity">Jobs</li>
-                                <li className="opacity">Subscriptions</li>
-                                <li className="opacity">CPSC Certificates</li>
-                                <li className="opacity">Ratings</li>
-                                <li className="opacity">Shop Help</li>
-                                <li className="opacity">Contact Us</li>
-                            </ul>
+
+                        <LinkFooter title="DC" links={dcUrl} />
+
+                        <LinkFooter title="SITES" links={sitesUrl} />
+
+                        <div className="image-logo-footer">
+                            <img src={imageDc} alt="foto-dc" className="img-dc-logo" />
                         </div>
-                        <div>
-                            <h3 className="h3-footer">Sites</h3>
-                            <ul>
-                                <li className="opacity">DC</li>
-                                <li className="opacity">MAD Magazine</li>
-                                <li className="opacity">DC Kids</li>
-                                <li className="opacity">DC Universe</li>
-                                <li className="opacity">DC Power Visa</li>
-                            </ul>
-                        </div>
-                    </card>
-                    <div className="bar-footer">
-                        <div className="row-footer">
-                            <div>
-                                <h3 className="h3-footer border">SIGN-UP NOW!</h3>
-                            </div>
-                            <div className="d-flex">
-                                <h3 className="h3-footer t-azure">FOLLOW US!</h3>
-                                <img src={footerIconFacebook} alt="facebook" className="icon-footer" />
-                                <img src={footerIconTwitter} alt="twitter" className="icon-footer" />
-                                <img src={footerIconYoutube} alt="youtube" className="icon-footer" />
-                                <img src={footerIconPinterest} alt="pinterest" className="icon-footer" />
-                                <img src={footerIconPeriscope} alt="periscope" className="icon-footer" />
+                    </div>
+                </div>
+
+                <div className="footer-bottom">
+                    <div className="footer-bottom-container">
+                        <button className="signup-button">SIGN-UP NOW!</button>
+
+                        <div className="social-container">
+                            <span className="follow-us">FOLLOW US</span>
+                            <div className="social-icone">
+                                {socialUrl.map((social, index) => (
+                                    <a key={index} href={social.url} className="social-icon" aria-label={social.name}>
+                                        <img src={social.icon} alt={social.name} className="social-icon-img" />
+                                    </a>
+                                ))}
                             </div>
                         </div>
                     </div>

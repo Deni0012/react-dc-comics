@@ -6,7 +6,7 @@ const navLinks = [
     { name: 'COMICS', url: '/#' },
     { name: 'MOVIES', url: '/#' },
     { name: 'TV', url: '/#' },
-    { name: 'GAMES', url: '/games' },
+    { name: 'GAMES', url: '/#' },
     { name: 'COLLECTIBLES', url: '/#' },
     { name: 'VIDEOS', url: '/#' },
     { name: 'FANS', url: '/#' },
