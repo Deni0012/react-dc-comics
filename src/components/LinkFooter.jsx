@@ -1,3 +1,4 @@
+// Creazione di LinkFooter con props e collegamento a Footer.jsx
 const LinkFooter = (props) => {
     return (
         <div className="footer-props">
@@ -15,4 +16,5 @@ const LinkFooter = (props) => {
     );
 };
 
+// Esportazione di LinkFooter
 export default LinkFooter;

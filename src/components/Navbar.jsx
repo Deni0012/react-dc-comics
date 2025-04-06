@@ -1,3 +1,4 @@
+// Creazione di Navbar con props e collegamento a Header.jsx
 const Navbar = (props) => {
     return (
         <nav className="main-nav">
@@ -14,4 +15,5 @@ const Navbar = (props) => {
     );
 };
 
+// Esportazione di Navbar
 export default Navbar

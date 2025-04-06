@@ -1,3 +1,4 @@
+// Importazioni di Link e immagini
 import LinkFooter from './LinkFooter';
 import imageDc from '../assets/img/dc-logo-bg.png';
 import footerIconFacebook from '../assets/img/footer-facebook.png';
@@ -58,12 +59,13 @@ const socialUrl = [
     { name: 'Location', url: 'https://www.dc.com/dccomicslocator', icon: footerIconPeriscope }
 ];
 
-
+// Creazione della Funzione di Footer
 function Footer() {
     return (
         <>
             <footer>
                 <div className='container-footer'>
+                    {/* Creazione dei link nel footer collegato a LinkFooter.jsx */}
                     <div className="footer-link-container">
                         <div>
                             <LinkFooter title="DC COMICS" links={dcComicsUrl} />
@@ -74,6 +76,7 @@ function Footer() {
 
                         <LinkFooter title="SITES" links={sitesUrl} />
 
+                        {/* Logo del Footer */}
                         <div className="image-logo-footer">
                             <img src={imageDc} alt="foto-dc" className="img-dc-logo" />
                         </div>
@@ -87,6 +90,7 @@ function Footer() {
                         <div className="social-container">
                             <span className="follow-us">FOLLOW US</span>
                             <div className="social-icone">
+                                {/* Collegamento di socialUrl */}
                                 {socialUrl.map((social, index) => (
                                     <a key={index} href={social.url} className="social-icon" aria-label={social.name}>
                                         <img src={social.icon} alt={social.name} className="social-icon-img" />
@@ -101,7 +105,7 @@ function Footer() {
     )
 }
 
-
+// Esportazione di Footer
 export default Footer;
 
 

@@ -1,6 +1,8 @@
+// Importazione di Logo e Navbar per Header
 import dcLogo from '../assets/img/dc-logo.png'
 import Navbar from './Navbar'
 
+// Creazione di navLinks con URL
 const navLinks = [
     { name: 'CHARACTERS', url: '/#' },
     { name: 'COMICS', url: '/#' },
@@ -14,6 +16,8 @@ const navLinks = [
     { name: 'SHOP', url: '/#' }
 ];
 
+
+// Creazione della Funzione di Header
 function Header() {
 
     return (
@@ -22,30 +26,32 @@ function Header() {
             <header>
                 <div className='header-container'>
 
+                    {/* Logo di Header */}
                     <div className='logo-container'>
                         <a href="/">
                             <img src={dcLogo} alt="dc-logo" />
                         </a>
                     </div>
 
+                    {/* Creazione dei link nell'header collegato a Navbar.jsx */}
                     <Navbar link={navLinks} />
 
                 </div>
 
-
-
-
-
-
             </header >
 
         </>
+
     )
 }
 
 
-
+// Esportazione di Header
 export default Header;
+
+
+
+
 
 
 

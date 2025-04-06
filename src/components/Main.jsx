@@ -1,5 +1,6 @@
-
+// Creazione della Funzione Main
 function Main() {
+    // Creazione di frecce direzionali
     const arrowLeft = "-->";
     const arrowRight = "<--";
     return (
@@ -12,4 +13,6 @@ function Main() {
         </>
     )
 }
+
+// Esportazione di Main
 export default Main;
