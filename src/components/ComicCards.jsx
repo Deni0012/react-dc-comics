@@ -9,6 +9,7 @@ function ComicCards({ comics }) {
 
                 </div>
             ))}
+            <div className="load-more">LOAD MORE</div>
 
         </>
     );

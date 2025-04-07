@@ -58,13 +58,10 @@ main {
   top: 0;
   left: 0;
   transform: translateY(-50%);
-  background-color: #0092fa;
+  background-color: #0282f9;
   padding: 10px 30px;
   font-weight: bold;
-  text-transform: uppercase;
-  font-family: Arial, sans-serif;
   font-size: 1.2rem;
-  letter-spacing: 1px;
 }
 
 /* Footer */
@@ -312,4 +309,14 @@ footer {
   font-size: 12px;
   padding-top: 1rem;
   width: 100%;
+}
+
+.load-more {
+  margin-top: 40px;
+  margin-left: 500px;
+  transform: translateY(-50%);
+  background-color: #0282f9;
+  padding: 10px 30px;
+  font-weight: bold;
+  font-size: 1rem;
 }
