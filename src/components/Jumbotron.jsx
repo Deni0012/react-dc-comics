@@ -1,5 +1,7 @@
+// Importazione di Jumbotron image
 import jumbotronImg from "../assets/img/jumbotron.jpg"
 
+// Creazione della funzione Jumbotron
 function Jumbotron() {
     return (
         <div className="jumbotron">
@@ -9,4 +11,5 @@ function Jumbotron() {
     )
 }
 
+// Esportazione di Jumbotron
 export default Jumbotron;

@@ -1,3 +1,4 @@
+// Importazione dei moduli 
 import comics from "../data/comics"
 import Jumbotron from "./Jumbotron";
 import ComicCards from "./ComicCards";
