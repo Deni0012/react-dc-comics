@@ -1,15 +1,14 @@
-import comics from "../data/comics";
+import comics from "../data/comics"
+import Jumbotron from "./Jumbotron";
 
 // Creazione della Funzione Main
 function Main() {
-    // Creazione di frecce direzionali
-    const arrowLeft = "-->";
-    const arrowRight = "<--";
     return (
         <>
             <main>
-                <div className="container-h1">
-                    <h1>{arrowLeft}Content goes here{arrowRight}</h1>
+                < Jumbotron />
+                <div className="container-main">
+
                 </div>
             </main>
         </>
