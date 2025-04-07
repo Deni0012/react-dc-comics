@@ -16,4 +16,4 @@ const Navbar = (props) => {
 };
 
 // Esportazione di Navbar
-export default Navbar
+export default Navbar;

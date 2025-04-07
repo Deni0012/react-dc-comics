@@ -1,9 +1,9 @@
 // Importazione di immagini per la lista menù
-import DigitalComicsIcon from '../../assets/img/buy-comics-digital-comics.png';
-import MerchandiseBuyIcon from '../../assets/img/buy-comics-merchandise.png';
-import LocatorIcon from '../../assets/img/buy-comics-shop-locator.png';
-import SubscriptionsBuyIcon from '../../assets/img/buy-comics-subscriptions.png';
-import PowerIcon from '../../assets/img/buy-dc-power-visa.svg';
+import DigitalComicsIcon from '../assets/buy-comics-digital-comics.png';
+import MerchandiseBuyIcon from '../assets/buy-comics-merchandise.png';
+import LocatorIcon from '../assets/buy-comics-shop-locator.png';
+import SubscriptionsBuyIcon from '../assets/buy-comics-subscriptions.png';
+import PowerIcon from '../assets/buy-dc-power-visa.svg';
 
 // Creazione della lista informativa
 const listInfo = [

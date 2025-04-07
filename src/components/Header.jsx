@@ -1,5 +1,5 @@
 // Importazione di Logo e Navbar per Header
-import dcLogo from '../assets/img/dc-logo.png'
+import dcLogo from '../assets/dc-logo.png'
 import Navbar from './Navbar'
 
 // Creazione di navLinks con URL

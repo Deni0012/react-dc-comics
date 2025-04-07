@@ -1,5 +1,5 @@
 // Importazione di Jumbotron image
-import jumbotronImg from "../assets/img/jumbotron.jpg"
+import jumbotronImg from "../assets/jumbotron.jpg"
 
 // Creazione della funzione Jumbotron
 function Jumbotron() {

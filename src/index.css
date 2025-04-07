@@ -53,6 +53,20 @@ main {
   position: relative;
 }
 
+.current-series {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(-50%);
+  background-color: #0092fa;
+  padding: 10px 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: Arial, sans-serif;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+}
+
 /* Footer */
 footer {
   background-color: #303030;

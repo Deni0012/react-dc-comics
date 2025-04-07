@@ -1,11 +1,11 @@
 // Importazioni di Link e immagini
 import LinkFooter from './LinkFooter';
-import imageDc from '../assets/img/dc-logo-bg.png';
-import footerIconFacebook from '../assets/img/footer-facebook.png';
-import footerIconTwitter from '../assets/img/footer-twitter.png';
-import footerIconYoutube from '../assets/img/footer-youtube.png';
-import footerIconPinterest from '../assets/img/footer-pinterest.png';
-import footerIconPeriscope from '../assets/img/footer-periscope.png';
+import imageDc from '../assets/dc-logo-bg.png';
+import footerIconFacebook from '../assets/footer-facebook.png';
+import footerIconTwitter from '../assets/footer-twitter.png';
+import footerIconYoutube from '../assets/footer-youtube.png';
+import footerIconPinterest from '../assets/footer-pinterest.png';
+import footerIconPeriscope from '../assets/footer-periscope.png';
 
 
 // ComicURL
