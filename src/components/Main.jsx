@@ -1,3 +1,5 @@
+import comics from "../data/comics";
+
 // Creazione della Funzione Main
 function Main() {
     // Creazione di frecce direzionali
